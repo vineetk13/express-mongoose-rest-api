@@ -21,6 +21,11 @@ const port = process.env.PORT || 3000;
 //       res.status(503).send("The server is under maintenance");
 // })
 
+// ************ FILE UPLOADS *******************************
+// app.post("/upload", upload.single("upload"), (req, res) => {
+//       res.send();
+// })
+
 app.use(express.json());
 app.use(userRouter);
 app.use(taskRouter);
